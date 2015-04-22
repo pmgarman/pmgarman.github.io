@@ -1,5 +1,3 @@
-$width: 100% / 3;
-
 a:link:after, a:visited:after {
 	content: "";
 }
@@ -40,7 +38,11 @@ a:link:after, a:visited:after {
 	.page-header {
 		margin: 1em 0 1.5em 0;
 	}
-	
+
+	.skills {
+		page-break-after: always;
+	}
+
 	.col-sm-5, .col-sm-7 {
 		float:left;
 		width: 50%;
@@ -52,20 +54,17 @@ a:link:after, a:visited:after {
 	.col-sm-6 {
 		float:left;
 		width: 50%;
-		&:nth-child(2n+2) {
+		&:nth-child(2n+1) {
 			clear: left;
 		}
 		&.list-group {
 			clear:none;
 		}
 	}
-	
-	.col-md-4 {
+
+	.col-md-6 {
 		float:left;
-		width: $width;
-		&:nth-child(3n-1) {
-			clear: left;
-		}
+		width: 50%;
 	}
 
 	.col-sm-5, .col-sm-6, .col-sm-7 {
